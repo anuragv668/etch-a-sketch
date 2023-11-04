@@ -1,3 +1,10 @@
+const randomclr = () => {
+  let red = Math.floor(Math.random() * 255);
+  let green = Math.floor(Math.random() * 255);
+  let blue = Math.floor(Math.random() * 255);
+  return `rgb(${red}, ${green}, ${blue})`;
+}
+
 const body = document.querySelector('body');
 const container = document.createElement('div');
 container.classList.add('container');
@@ -28,7 +35,7 @@ const mkgrid = (gridDimensions) => {
       let square = document.createElement('div');
       square.classList.add('square');
       square.addEventListener('mouseover', () => {
-        square.style.backgroundColor = 'blue';
+        square.style.backgroundColor = randomclr();
       });
       row.appendChild(square);
     }
