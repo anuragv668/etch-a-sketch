@@ -23,7 +23,7 @@ btn.innerText = 'change';
 body.insertBefore(btn, body.firstChild);
 
 const btnDesc = document.createElement('h3');
-btnDesc.innerText = 'Choose the grid dimensions';
+btnDesc.innerText = 'Change the grid';
 body.insertBefore(btnDesc, body.firstChild);
 
 const mkgrid = (gridDimensions) => {
