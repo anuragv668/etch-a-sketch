@@ -16,7 +16,7 @@ btn.onclick = () => {
   while (container.firstChild) {
     container.removeChild(container.firstChild);
   }
-  gridsize = parseInt(window.prompt('Enter dimensions: '));
+  gridsize = parseInt(window.prompt('Enter dimensions: eg.10'));
   mkgrid(gridsize);
 };
 btn.innerText = 'change';
